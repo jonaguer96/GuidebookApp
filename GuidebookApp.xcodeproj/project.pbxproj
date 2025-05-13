@@ -35,16 +35,6 @@
 			path = GuidebookApp;
 			sourceTree = "<group>";
 		};
-		9A60DE712DD2EE19007AC9DB /* GuidebookAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GuidebookAppTests;
-			sourceTree = "<group>";
-		};
-		9A60DE7B2DD2EE19007AC9DB /* GuidebookAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GuidebookAppUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				9A60DE602DD2EE16007AC9DB /* GuidebookApp */,
-				9A60DE712DD2EE19007AC9DB /* GuidebookAppTests */,
-				9A60DE7B2DD2EE19007AC9DB /* GuidebookAppUITests */,
 				9A60DE5F2DD2EE16007AC9DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				9A60DE702DD2EE19007AC9DB /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				9A60DE712DD2EE19007AC9DB /* GuidebookAppTests */,
-			);
 			name = GuidebookAppTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				9A60DE7A2DD2EE19007AC9DB /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				9A60DE7B2DD2EE19007AC9DB /* GuidebookAppUITests */,
 			);
 			name = GuidebookAppUITests;
 			packageProductDependencies = (
