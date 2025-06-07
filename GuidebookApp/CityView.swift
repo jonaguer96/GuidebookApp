@@ -32,7 +32,7 @@ struct CityView: View {
                 .padding(.horizontal)
             }
             .onAppear() {
-                cities = dataService.getData()
+                cities = dataService.getFileData()
             }
         }
     }

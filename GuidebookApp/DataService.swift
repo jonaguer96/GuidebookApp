@@ -92,4 +92,30 @@ struct DataService {
             ]
         
     }
+    
+    func  getFileData() -> [City] {
+        
+        // Get file path to DemoData.json
+        if let url = Bundle.main.url(forResource: "DemoData", withExtension: "json") {
+            
+            do {
+                // Read the file and turn it into Data
+                let data = try Data(contentsOf: url)
+                // Parse data into Swift instances
+                let decoder = JSONDecoder()
+                
+                do {
+                    let cities = try decoder.decode([City].self, from: data)
+                    return cities
+                }
+                catch {
+                    print("Couldn't parse thte JSON: \(error)")
+                }
+            }
+            catch {
+                print("Couldn't read the file: \(error)")
+            }
+        }
+        return [City]()
+    }
 }
